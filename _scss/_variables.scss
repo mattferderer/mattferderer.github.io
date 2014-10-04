@@ -1,0 +1,44 @@
+//
+// VARIABLES
+//
+
+
+// Colors
+$blue: #4183C4; 
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+// Theme Colors 
+$theme-color-primary-dark: #00736A;
+$theme-color-primary-light: #3cc7c0;
+$theme-color-secondary-dark: #F2561A;
+$theme-color-secondary-light: #FEA301;
+$theme-color-white: $white;
+$theme-color-black: #181419;
+
+// Foundation Color Variables
+$primary-color: #008CBA;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+
+
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
