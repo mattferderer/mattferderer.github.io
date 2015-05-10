@@ -8,7 +8,6 @@
 @import "_reset";
 @import "_variables";
 @import "normalize";
-@import "foundation/_settings";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -27,7 +26,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1280px;
   padding: 0 10px;
   width: 100%;
 }
@@ -41,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 15px;
   padding: 0;
 
-  @include mobile {
+  @include small {
     line-height: 1.4;
   }
 }
@@ -158,7 +157,7 @@ img {
 .masthead {
   padding: 20px 0;
   
-  @include mobile {
+  @include small {
     text-align: center;
   }
 }
@@ -169,7 +168,7 @@ img {
   height: 70px;
   margin-right: 15px;
 
-  @include mobile {
+  @include small {
     float: none;
     display: block;
     margin: 0 auto;
@@ -183,7 +182,7 @@ img {
 .site-info {
   float: left;
 
-  @include mobile {
+  @include small {
     float: none;
     display: block;
     margin: 0 auto;
@@ -206,7 +205,7 @@ img {
   color: $white;
   font-size: 20px;
   
-  @include mobile {
+  @include small {
     margin: 3px 0;
   }
 }
@@ -217,7 +216,7 @@ nav {
   font-family: $helveticaNeue; 
   font-size: 18px;
   
-  @include mobile {
+  @include small {
     float: none;
     margin-top: 9px;
     display: block;
@@ -231,7 +230,7 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
 
-    @include mobile {
+    @include small {
       margin: 0 10px;
       color: $theme-color-secondary-dark;
     }
@@ -241,6 +240,14 @@ nav {
 //
 // .main
 //
+#main{
+  .page, .posts{
+    @include large {
+      max-width: 70%;
+      float:left;
+    }
+  }  
+}
 
 .posts > .post {
   padding-bottom: 2em;
@@ -269,6 +276,16 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+  }
+}
+
+#sidebar{
+  display:none;
+  @include large {
+    float:left;
+    max-width: 25%;
+    margin-left:5%;
+    display:block;
   }
 }
 

@@ -18,10 +18,13 @@
 code {
   font-family: 'Courier', monospace;
   font-size: 16px;
-  color: $darkerGray;
+  font-weight: 600;
+  line-height: 1.75;
+  color: $lightGray;
   display:block;
   padding:10px;
-  background:lighten($theme-color-primary-light,25%);
+  background:$darkerGray;
+  border-radius: 5px;
 }
  
 // Solarized Light Pygments 
