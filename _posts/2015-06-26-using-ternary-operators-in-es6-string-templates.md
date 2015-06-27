@@ -2,9 +2,11 @@
 layout: post
 title: Using Ternary Operators in ES6 String Templates
 ---
-The new ES6 version of JavaScript introduced Template Strings which allow for improved readability of code when working with multiple line strings. This allows us to avoid the following syntax:
+The new ES6 version of JavaScript introduced Template Strings which allow for improved readability of code when working with multiple line strings. 
 
-```javascript
+This allows us to avoid the following syntax:
+
+~~~ javascript
 //Common method
 let foo = '<table>' +
 	'<tr>' +
@@ -17,22 +19,22 @@ let foo = '<table> \
 		<td>Tables are a pain</td> \
 	</tr> \
 </table>';
-```
+~~~
 
 Instead we can now use the backtick character to create a string template. We can also include variables by wrapping them in ${}.
 
-```
+~~~ javascript
 let enjoyment = 'not so bad';
 let foo = `<table>
 	<tr>
 		<td>Tables are ${enjoyment}</td>
 	</tr>
 </table>`;
-```
+~~~
 
 We can even take this one step farther and use a ternary operator to do an if else statement within our multiple line string.
 
-```
+~~~ javascript
 let displayAverages = false;
 let totalSales = 500;
 let averageSales = 338;
@@ -46,7 +48,7 @@ let tableTemplate = `<table id="sales">
 		${displayAverages ? `<td>${averageSales}</td>` : ''}
 </tr>
 </table>`;
-```
+~~~
 
 Try it out for yourself on Plunker.
 
