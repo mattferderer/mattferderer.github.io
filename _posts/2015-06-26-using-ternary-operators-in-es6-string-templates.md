@@ -35,7 +35,7 @@ let foo = `<table>
 We can even take this farther and use a ternary operator to do an if/else statement, call a function and solve some math.
 
 ~~~ javascript
-let displayAverages = false;
+let displayAverages = true;
 let totalSales = 500;
 let sales = [50, 200, 125, 75, 25, 10, 15];
 let tableTemplate = `<table id="sales">
