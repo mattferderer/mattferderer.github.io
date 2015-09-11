@@ -32,12 +32,12 @@ let foo = `<table>
 </table>`;
 ~~~
 
-We can even take this one step farther and use a ternary operator to do an if else statement within our multiple line string.
+We can even take this farther and use a ternary operator to do an if/else statement, call a function and solve some math.
 
 ~~~ javascript
 let displayAverages = false;
 let totalSales = 500;
-let averageSales = 338;
+let sales = [50, 200, 125, 75, 25, 10, 15];
 let tableTemplate = `<table id="sales">
 	<tr>
 		<th>Total</th>
@@ -45,9 +45,10 @@ let tableTemplate = `<table id="sales">
 	</tr>
 	<tr>
 		<td>${totalSales}</td>
-		${displayAverages ? `<td>${averageSales}</td>` : ''}
-</tr>
+		${displayAverages ? `<td>${Math.round(totalSales/sales.length)}</td>` : ''}
+	</tr>
 </table>`;
+
 ~~~
 
 Try it out for yourself on Plunker.
