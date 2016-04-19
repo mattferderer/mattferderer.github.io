@@ -3,8 +3,6 @@ layout: post
 title: Reasons Why Every Website Should Use SSL/HTTPS & Where to Get a Free SSL
 ---
 
-#Reasons Why Every Website Should Use SSL/HTTPS & Where to Get a Free SSL
-
 Looking for the TLDR version? 
 
 > Go to [Let's Encrypt](https://letsencrypt.org/) to get a free SSL so that your site is safer, more accurate, faster & can offer more features for your visitors as well as report back correct data to you. 
